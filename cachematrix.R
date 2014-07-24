@@ -1,3 +1,4 @@
+##this function is used to cache the matrix.
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
   set<-function(y){
@@ -11,6 +12,8 @@ makeCacheMatrix <- function(x = matrix()) {
        setmatrix=setmatrix,
        getmatrix=getmatrix)
 }
+## this function is used to create the inverse of the matrix
+## if matrix is already created then it is retreived from the cache
 
 cacheSolve <- function(x=matrix(), ...) {
   m<-x$getmatrix()
